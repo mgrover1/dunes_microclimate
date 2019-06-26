@@ -8,7 +8,6 @@ import os
 import glob
 from matplotlib import rcParams
 from pandas import Series, DataFrame
-import seaborn as sb
 import csv
 import datetime as datetime
 from datetime import datetime
@@ -43,4 +42,4 @@ def bug_degree_day(dataframe):
             dataframe.at[bCount,['Bug_Degree_Day']] = np.round((j-50)/24,3)
         dataframe['Sum_Bug_Degree_Day'][i] = sum(dataframe.Bug_Degree_Day[0:sum(i+1)])
         bCount = bCount+1
-    return dataframe 
+    return dataframe

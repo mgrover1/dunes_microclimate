@@ -8,7 +8,6 @@ import os
 import glob
 from matplotlib import rcParams
 from pandas import Series, DataFrame
-import seaborn as sb
 import csv
 import datetime as datetime
 from datetime import datetime
@@ -55,7 +54,7 @@ def data_read_in(result):
     df = pd.concat(appended_data)
 
     #Export all the observations to a csv
-    df.to_csv('/Users/mgrover1/microclimate/full_dataframe.csv')
+    df.to_csv('full_dataframe.csv')
 
 
     #Assemble the dataframe and seperate datetime features so they can be used later
